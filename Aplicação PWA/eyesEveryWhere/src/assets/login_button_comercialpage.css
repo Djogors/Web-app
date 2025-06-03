@@ -1,0 +1,9 @@
+.login-link {
+  color: #033f63; /* Custom orange color */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-link:hover {
+  color: #037ac4; /* Darker shade on hover */
+}

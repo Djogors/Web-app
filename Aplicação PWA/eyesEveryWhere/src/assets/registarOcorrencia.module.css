@@ -1,0 +1,175 @@
+.title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Helvetica';
+  margin-top: 20px;
+}
+
+.title_input {
+  color: #ddd;
+  margin-left: 18px;
+}
+
+.container_add_photos {
+  background: #007bff;
+  padding: 5px 5px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_box {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Space out the text and arrow */
+  align-items: flex-start; /* Vertically align the text and arrow */
+  flex-direction: column;
+  padding: 10px 30px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.auditoria_box {
+  display: flex;
+  padding: 10px 30px; /* Add padding inside the box */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  gap: 50px;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auditoria_text {
+  font-size: 16px; /* Adjust text size */
+  color: #333; /* Set text color */
+  margin: 0; /* Remove default margin */
+}
+
+.container_add_photos addIcon {
+  width: 24px; /* Set a fixed width for the icon */
+  height: 24px; /* Set a fixed height for the icon */
+}
+
+.arrow_blue {
+  width: 20px; /* Set a consistent width for the arrow */
+  height: 20px; /* Set a consistent height for the arrow */
+  margin-left: 10px; /* Add spacing between the text and the arrow */
+}
+
+.upload {
+  text-align: center;
+  padding-top: 12px;
+  color: #ffffff;
+}
+
+.save {
+  position: fixed; /* Fix the button to the viewport */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  border: none;
+  background: #007bff;
+  border-radius: 40px;
+  color: #ffffff;
+  width: 100px; /* Adjust button width */
+  padding: 10px 20px; /* Add padding for better size */
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.container_overlay {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.modal_input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal_buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn_submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn_cancel {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.divider {
+  border: none; /* Remove the default border */
+  border-top: 1px solid #757575; /* Add a visible gray line */
+  margin: 10px 0; /* Add spacing above and below the divider */
+  width: 100%; /* Ensure it spans the full width of the container */
+}
+
+.btn_submit:hover {
+  background-color: #0056b3;
+}
+
+.btn_cancel:hover {
+  background-color: #bbb;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+.customFileUpload {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s;
+}

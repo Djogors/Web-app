@@ -1,0 +1,28 @@
+#title {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+.grid-item {
+  background-color: #f4f4f4; /* Light background for grid items */
+  border: 1px solid #ddd; /* Optional: Add a border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  padding: 50px; /* Add padding inside each grid item */
+  text-align: center; /* Center the content */
+  font-family: Arial, Helvetica, sans-serif; /* Font styling */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow at the bottom */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.grid-item > *:first-child {
+  margin-bottom: 20px; /* Add space below the icon */
+}

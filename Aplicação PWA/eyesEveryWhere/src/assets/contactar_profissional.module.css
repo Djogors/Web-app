@@ -1,0 +1,109 @@
+.container_box {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.title {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.divider {
+  border: none; /* Remove the default border */
+  border-top: 1px solid #757575; /* Add a visible gray line */
+  margin: 10px; /* Add spacing above and below the divider */
+}
+
+.auditoria_box {
+  color: black; /* Set the star color */
+  font-size: 20px; /* Adjust the size */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  width: 300px;
+}
+
+.auditoria_text {
+  margin: 0;
+  width: 200px;
+  font-family: Helvetica;
+  white-space: nowrap;
+  font-size: medium;
+}
+
+.checkbox {
+  transform: scale(1.2); /* Optional: make checkboxes easier to tap */
+}
+
+.btn_terminar {
+  position: fixed; /* Fix the button to the viewport */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  border: none;
+  background: #007bff;
+  border-radius: 40px;
+  color: #ffffff;
+  width: 100px; /* Adjust button width */
+  padding: 10px 20px; /* Add padding for better size */
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.modal_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn_submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn_cancel {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}

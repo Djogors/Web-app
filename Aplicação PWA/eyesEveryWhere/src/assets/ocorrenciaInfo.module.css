@@ -1,0 +1,55 @@
+.image-grid {
+  display: grid; /* Enable CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+  gap: 20px; /* Add spacing between grid items */
+  margin-top: 20px; /* Add spacing above the grid */
+  padding: 10px 20px;
+}
+.container_box {
+  padding: 10px 30px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 8px;
+}
+.grid-image {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.video-container {
+  margin-top: 20px; /* Add spacing above the video */
+  text-align: center; /* Center the video container */
+}
+
+.video-player {
+  width: 100%; /* Make the video responsive */
+  max-width: 600px; /* Set a maximum width for the video */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.sub_title {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.theme {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.preco {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description {
+  font-family: Helvetica;
+  color: grey;
+}

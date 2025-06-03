@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Auditorias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/global.css"/>
+    <link rel="stylesheet" href="style_bo/bo_pedidos.css"/>
+    <script src="scripts/local_storage_utils.js"></script>
+    <script src="scripts/bo_pedidos.js" defer></script>
+    <script src="scripts/auditorias.js" defer></script>
+    <link rel="icon" type="image/png" href="../media/images/logo_light.png" sizes="16x16" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="bo_menu.html">
+                <img class="logo" src="../media/images/logo_light.png" alt="Logo"/>
+                <span class="logo_title">EyesEverywhere</span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="receber_mensagem.html">
+                            <img class="nav_element" src="../media/icons/chat.svg" alt="Chat Icon"/>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="area_perfil.html">
+                            <img class="nav_element" src="../media/icons/profile.svg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <a class="a-button headings" href="bo_pedidos.html">
+            Pedidos
+        </a>
+
+        <img src="../media/icons/arrow_right_alt.svg"/>
+
+        <a class="a-button headings" href="bo_ocorrencias.html">
+            Ocorrências
+        </a>
+
+        <img src="../media/icons/arrow_right_alt.svg"/>
+
+        <a id="Selected" class="headings">
+            Auditorias
+        </a>
+    </div>
+
+    <div class="container mt-5">
+        <table class="custom-table" id="tabela-peritos">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Utilizador</th>
+                <th scope="col">Data de emissão</th>
+                <th scope="col">Tipo de auditoria</th>
+                <th scope="col">Prioridade</th>
+                <th scope="col">Estado de auditoria</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </div>
+</body>
+
+</html>

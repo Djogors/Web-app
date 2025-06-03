@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registo de Peritos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="style_bo/bo_menu.css" />
+    <link rel="stylesheet" href="../Front-Office/Style.css" />
+    <script src="scripts/local_storage_utils.js" defer></script>
+    <script src="../Front-Office/scriptsFront/ErrorPopup.js" defer></script>
+    <script src="../Front-Office/scriptsFront/Popup.js" defer></script>
+    <script src="scripts/registo_peritos.js" defer></script>
+
+  </head>
+  <body>
+    <div class="page-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="bo_menu.html">
+            <img class="logo" src="../media/images/logo_light.png" alt="Logo" />
+            <span class="logo_title">EyesEverywhere</span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="receber_mensagem.html">
+                  <img
+                    class="nav_element"
+                    src="../media/icons/chat.svg"
+                    alt="Chat Icon"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="area_perfil.html">
+                  <img
+                    class="nav_element"
+                    src="../media/icons/profile.svg"
+                    alt="Profile Icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="login-title">
+        Registo de <span class="registo-title">Peritos</span>
+      </h1>
+
+      <form id="registo-peritos-form" class="form-container-registo">
+        <!-- Nome Input -->
+        <div class="input-container">
+          <label for="nome" class="input-label">
+            Nome do Perito<span class="required-symbol">*</span>
+          </label>
+          <input type="text" id="nome" placeholder="Nome do Perito" required />
+        </div>
+        <!-- Email Input -->
+        <div class="input-container">
+          <label for="email" class="input-label">
+            Email do Perito<span class="required-symbol">*</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email do Perito"
+            required
+          />
+        </div>
+        <!-- NIF Input -->
+        <div class="input-container">
+          <label for="NIF" class="input-label">
+            NIF<span class="required-symbol">*</span>
+          </label>
+          <input type="number" id="NIF" placeholder="NIF" required />
+        </div>
+        <!-- CC Input -->
+        <div class="input-container">
+          <label for="cc" class="input-label">
+            Nº do CC<span class="required-symbol">*</span>
+          </label>
+          <input type="number" id="cc" placeholder="Nº do CC" required />
+        </div>
+        <!-- Morada Input -->
+        <div class="input-container">
+          <label for="morada" class="input-label"
+            >Morada<span class="required-symbol">*</span></label
+          >
+          <input type="text" id="morada" placeholder="Morada" required />
+        </div>
+        <p class="required-fields">* Campos obrigatórios</p>
+        <button class="btn-registar" type="submit">Registar</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.container_box {
+  padding: 10px 30px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.description {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.graph {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}

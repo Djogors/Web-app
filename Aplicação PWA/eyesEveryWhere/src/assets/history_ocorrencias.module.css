@@ -1,0 +1,52 @@
+.container_box {
+  padding: 10px 30px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.auditoria_box {
+  display: flex;
+  border: none; /* Remove border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  gap: 20px;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.divider {
+  border: none; /* Remove the default border */
+  border-top: 1px solid #757575; /* Add a visible gray line */
+  margin: 10px 0; /* Add spacing above and below the divider */
+  width: 100%; /* Ensure it spans the full width of the container */
+}
+
+.auditoria_text {
+  font-size: 16px; /* Adjust text size */
+  color: #333; /* Set text color */
+  margin: 0; /* Remove default margin */
+  font-weight: bold;
+}
+
+.btn_ver {
+  border: none;
+  background: #007bff;
+  border-radius: 40px;
+  color: #ffffff;
+  height: 40px;
+  width: 100px;
+  margin-left: 60px;
+  font-size: 16px;
+}
+
+.subtitle {
+  font-weight: bolder;
+  font-family: Arial, He5etica, sans-serif;
+}
+
+.info {
+  font-family: 'Helvetica';
+  font-size: 16px;
+}

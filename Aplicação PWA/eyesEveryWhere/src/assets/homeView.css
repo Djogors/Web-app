@@ -1,0 +1,283 @@
+#slogan {
+  font-family: 'Helvetica';
+}
+
+#rep {
+  color: #000000;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  padding: 10px 30px;
+}
+
+#rep1 {
+  color: #033f63;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  padding: 10px 30px;
+}
+.box_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+#service_title {
+  font-weight: bold;
+  font-family: 'Helvetica';
+  font-weight: bolder;
+}
+
+.button_primary {
+  background-color: #033f63;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+}
+
+.background1-container {
+  position: relative; /* Create a positioning context for absolute children */
+  width: 100%; /* Ensure it takes the full width */
+  left: -24px;
+  border-radius: 15px; /* Adjust px value for roundness */
+  overflow: hidden; /* Ensures content (like images) inside respects rounded corners */
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; /* or a fixed width */
+}
+
+.swiper {
+  margin-top: -40px;
+}
+
+.text-overlay {
+  position: absolute; /* Position the text above the background */
+  top: 55%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-direction: column;
+
+  gap: 15px;
+  color: #ffffff; /* Adjust text color as needed */
+  z-index: 1; /* Ensure the text is above the background */
+}
+
+.horizontal-group {
+  display: flex; /* Align h5 and button horizontally */
+  align-items: center; /* Vertically align h5 and button */
+  gap: 50px; /* Add spacing between h5 and button */
+}
+
+background1 {
+  display: block; /* Ensure the background component takes up space */
+  z-index: 0; /* Ensure the background is below the text */
+}
+
+#Auditory {
+  font-family: 'Helvetica';
+  font-weight: bold;
+  color: #f8f9fa;
+  margin: 0 auto;
+  text-align: center;
+}
+#Auditory_des {
+  color: #f8f9fa;
+}
+
+swiper {
+  flex: 1; /* Allow the Swiper to take up available space */
+}
+
+.button_consult {
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ffffff; /* White border */
+  outline: none;
+  padding: 10px 30px; /* Add some padding for better appearance */
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.box {
+  background-color: #ffffff;
+  position: relative; /* Create a positioning context */
+  background-color: #ffffff; /* Fallback background color */
+  background-size: cover; /* Ensure the image covers the entire box */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  border: 1px solid #e0e3eb;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+  z-index: 1;
+}
+
+.box-icon {
+  position: absolute; /* Position the background to cover the box */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Place it behind the text */
+  opacity: 0; /* Initially hide the background */
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+.box h5 {
+  position: relative; /* Position the text above the background */
+  font-family: Helvetica;
+  font-weight: 900;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.box:hover h5 {
+  opacity: 0; /* Fade out the title on hover */
+}
+
+.box:hover .box-icon {
+  opacity: 1; /* Fade in the icon on hover */
+}
+
+.container_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.info {
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 350px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info .input-data {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.info .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid silver;
+  outline: none;
+}
+
+.input-data input:focus ~ label {
+  transform: translateY(-20px);
+}
+
+.info .input-data label {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input_contact::placeholder {
+  color: #033f63;
+  font-family: 'Helvetica';
+}
+
+.data {
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  outline: none;
+  stroke: none;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#msg_des {
+  color: #033f63;
+  font-family: 'Helvetica';
+  font-weight: semi-bold;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.report {
+  width: 100%; /* Ensure the container takes the full width */
+  display: flex; /* Optional: Use flexbox for alignment */
+  justify-content: center; /* Optional: Center content horizontally */
+  flex-direction: column;
+}
+
+.image_res {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Set a maximum width for the image */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.image_res {
+  max-width: 100%;
+  height: auto;
+  filter: brightness(50%);
+}
+
+.image-text {
+  position: absolute;
+  bottom: 20px; /* Adjust position above the image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent; /* Semi-transparent background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out; /* Fade-in effect */
+}
+
+/* When Swiper Slide is Active */
+.swiper-slide-active .image-text {
+  opacity: 1; /* Fade in */
+}
+
+.content-box {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
