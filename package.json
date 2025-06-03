@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "name": "projetopw",
+  "version": "1.0.0",
+  "description": "Projeto de Programação para a Web do grupo 301",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielantlobo/projetoPW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielantlobo/projetoPW/issues"
+  },
+  "homepage": "https://github.com/danielantlobo/projetoPW#readme",
+  "devDependencies": {
+    "vite": "^6.3.4"
+  }
+}

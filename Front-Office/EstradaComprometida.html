@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyesEverywhere</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../media/images/logo_light.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="FrontOffice.html">
+                <img src="../media/images/logo_light.png" alt="EyesEverywhere Logo">
+                <span class="fw-bold fst-italic text-white ms-2">EyesEverywhere</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li id="authPlaceholder" class="nav-item dropdown">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5 flex-grow-1">
+        <h1 class="text-primary fw-bold mb-4">Reportar estrada comprometida</h1>
+        <form id="reportForm" data-type="estrada_comprometida">
+            <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="district" class="form-label">Selecione o distrito<span class="text-danger">*</span></label>
+                    <select id="district" class="form-select" required>
+                        <option value="" disabled selected>---</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="municipality" class="form-label">Selecione o conselho<span class="text-danger">*</span></label>
+                    <select id="municipality" class="form-select" required>
+                        <option value="" disabled selected>---</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="parish" class="form-label">Selecione a freguesia<span class="text-danger">*</span></label>
+                    <select id="parish" class="form-select" required>
+                        <option value="" disabled selected>---</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Morada de auditoria<span class="text-danger">*</span></label>
+                    <input type="text" id="address" class="form-control" placeholder="---" required>
+                </div>
+                <div class="mb-3">
+                    <label for="comments" class="form-label">Comentários</label>
+                    <textarea id="comments" class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="auditType" class="form-label">Selecione o tipo de auditoria<span class="text-danger">*</span></label>
+                    <select id="auditType" class="form-select" required>
+                        <option value="" disabled selected>---</option>
+                        <option value="Buraco na estrada">Buraco na estrada</option>
+                        <option value="Óleo na estrada">Óleo na estrada</option>
+                    </select>
+                </div>
+                <div class="mb-3 text-center">
+                    <label for="file-upload" class="file-upload border border-secondary rounded p-4 d-flex flex-column align-items-center">
+                        <p class="text-muted mb-2">Anexar ficheiro</p>
+                        <img src="../media/icons/uploaddoc.svg" alt="Upload Icon" width="50">
+                        <input type="file" id="file-upload" class="form-control" style="display: none;">
+                    </label>
+                    <p id="file-name-container" class="mt-2 text-muted"></p>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-2">Submeter</button>
+                </div>
+            </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-3 mt-auto">
+        <div class="container-fluid text-center">
+            <p class="small mb-0">EyesEverywhere - 2025. All Rights Reserved</p>
+        </div>
+    </footer> 
+
+    <script src="scriptsFront/freguesiasEconselhos.js"></script>
+    <script src="scriptsFront/Popup.js"></script>
+    <script src="../Back-Office/scripts/local_storage_utils.js"></script>
+    <script src="scriptsFront/ReportarPedido.js"></script>
+    <script src="scriptsFront/DisplayFile.js"></script>
+    <script src="scriptsFront/navbar.js"></script>
+    <script src="scriptsFront/AreaPessoal.js"></script>
+</body>
+</html>

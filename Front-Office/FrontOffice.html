@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyesEverywhere</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../media/images/logo_light.png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <script src="scripts/local_storage_utils.js" defer></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../Front-Office/FrontOffice.html">
+                <img src="../media/images/logo_light.png" alt="EyesEverywhere Logo">
+                <span class="fw-bold fst-italic text-white">EyesEverywhere</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#audit">Consultar estado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#report">Reportar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacte-nos</a>
+                    <li id="authPlaceholder" class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <img src="../media/FrontendImages/heropic.png" alt="Highway interchange" class="hero-image">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Keeping cities<p>
+                moving safely.
+            </p> </h1>
+        </div>
+    </section>
+
+    <!-- Reputation Section -->
+    <section class="py-5 bg-white" id="reputation">
+        <div class="container">
+            <h2 class="text-primary text-center mb-5 fw-bold">A nossa reputação</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card service-card text-center border-0 shadow-sm p-4">
+                        <div class="icon mb-3">
+                            <img src="../media/icons/mecanico.svg" alt="Melhores serviços" width="50">
+                        </div>
+                        <h5 class="fw-bold text-primary">Melhores serviços</h5>
+                        <p class="text-muted">Estradas e infraestruturas duradouras</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card text-center border-0 shadow-sm p-4">
+                        <div class="icon mb-3">
+                            <img src="../media/icons/gajofones.svg" alt="Melhor Equipa" width="50">
+                        </div>
+                        <h5 class="fw-bold text-primary">Melhor Equipa</h5>
+                        <p class="text-muted">Trabalha com a equipa mais inovadora</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card text-center border-0 shadow-sm p-4">
+                        <div class="icon mb-3">
+                            <img src="../media/icons/reguaesquadro.svg" alt="Melhor Solução" width="50">
+                        </div>
+                        <h5 class="fw-bold text-primary" style="font-weight: 450;">Melhor Solução</h5>
+                        <p class="text-muted">Tecnologia e inovação para transformar a mobilidade urbana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us Section -->
+    <section id="about">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <!-- Image Column -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="about-image" style="background-image: url('../media/FrontendImages/sobrenospic.jpg');"></div>
+                </div>
+                <!-- Text Column -->
+                <div class="col-lg-6 bg-primary text-white d-flex align-items-center p-5">
+                    <div class="p-lg-5">
+                        <h2 class="mb-4 fw-bold">Sobre nós</h2>
+                        <p class="mb-3">Na EyesEverywhere, trabalhamos para melhorar a sinalização e mobilidade urbana, tornando as cidades mais seguras e organizadas. Oferecemos soluções eficientes para otimizar o trânsito, promover a acessibilidade e garantir uma melhor experiência para pedestres, ciclistas e motoristas.</p>
+                        <p class="mb-3">Trabalhamos para transformar a mobilidade urbana com soluções inteligentes e adaptadas às necessidades de cada cidade.</p>
+                        <p class="fw-bold">Juntos, transformamos a mobilidade urbana!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5" id="stats">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-primary text-white text-center">
+                                <div class="card-body">
+                                    <h5 class="fw-bold m-0">47 Funcionários<p> ____________________ </p></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-secondary text-white text-center">
+                                <div class="card-body">
+                                    <h5 class="fw-bold m-0">Sede em Guimarães<p> ____________________ </p></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-secondary text-white text-center">
+                                <div class="card-body">
+                                    <h5 class="fw-bold m-0">Crescimento anual<p>de 6%</p><p> ____________________ </p></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-primary text-white text-center">
+                                <div class="card-body">
+                                    <h5 class="fw-bold m-0">+30 parcerias<p>estratégicas</p><p> ____________________ </p></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-primary text-white text-center">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                    <p id="auditoriasNoAno" class="fw-bold m-0">100</p>
+                                    <h5 class="fw-bold m-0">Auditorias no ano</h5> ____________________ </p></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-secondary text-white text-center">
+                                <div class="card-body">
+                                    <h5 class="fw-bold m-0">+5000 clientes<p>satisfeitos</p><p> ____________________ </p></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6 d-flex align-items-center" style="padding-left: 50px;">
+                    <div class="d-flex flex-column text-start p-5">
+                        <h2 class="text-primary fw-bold mb-4" style="font-size: 3.5rem;">20 anos de experiência</h2>
+                        <p class="text-muted mb-4" style="font-size: 1.1rem;">A nossa empresa é líder na auditoria e manutenção de morfologias urbanas, garantindo cidades mais seguras e bem cuidadas desde 2005.</p>
+                        <a href="#contact" class="btn btn-primary">Contacta-nos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audit Status Section -->
+    <section class="audit-status position-relative py-5" id="audit" style="background-image: url('../media/FrontendImages/consultorias.jpg'); background-size: cover; background-position: center;">
+        <div class="audit-overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-2">Pode consultar o estado da sua auditoria</h2>
+                    <p class="text-white mb-0">Porque o nosso motivo é a sua segurança!</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="../Front-Office/audit.html" class="btn btn-outline-light">Consultar aqui</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Section -->
+    <section class="py-5" id="report">
+        <div class="container">
+            <h2 class="text-primary fw-bold mb-4">Reportar</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <a href="EstradaComprometida.html" class="card-link text-decoration-none">
+                        <div class="card report-card border-0 shadow-sm h-100">
+                            <img src="../media/FrontendImages/buraco.jpg" class="card-img-top" alt="Estrada comprometida">
+                            <div class="card-footer bg-primary text-white p-3 text-center">
+                                <h5 class="m-0 fs-6 fw-bold">Estrada comprometida</h5>
+                                <img src="../media/icons/seta.svg" alt="seta" class="corner-icon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="FaltaSinalização.html" class="card-link text-decoration-none">
+                        <div class="card report-card border-0 shadow-sm h-100">
+                            <img src="../media/FrontendImages/sinalizacao1.jpg" class="card-img-top" alt="Estrada comprometida">
+                            <div class="card-footer bg-primary text-white p-3 text-center">
+                                <h5 class="m-0 fs-6 fw-bold">Falta de sinalização</h5>
+                                <img src="../media/icons/seta.svg" alt="seta" class="corner-icon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="SinalizaçãoDanificada.html" class="card-link text-decoration-none">
+                        <div class="card report-card border-0 shadow-sm h-100">
+                            <img src="../media/FrontendImages/faltasinal.jpg" class="card-img-top" alt="Estrada comprometida">
+                            <div class="card-footer bg-primary text-white p-3 text-center">
+                                <h5 class="m-0 fs-6 fw-bold">Sinalização danificada</h5>
+                                <img src="../media/icons/seta.svg" alt="seta" class="corner-icon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="TransitoCongestionado.html" class="card-link text-decoration-none">
+                        <div class="card report-card border-0 shadow-sm h-100">
+                            <img src="../media/FrontendImages/congestionamento.jpg" class="card-img-top" alt="Estrada comprometida">
+                            <div class="card-footer bg-primary text-white p-3 text-center">
+                                <h5 class="m-0 fs-6 fw-bold">Trânsito congestionado</h5>
+                                <img src="../media/icons/seta.svg" alt="seta" class="corner-icon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="PasseioDanificado.html" class="card-link text-decoration-none">
+                        <div class="card report-card border-0 shadow-sm h-100">
+                            <img src="../media/FrontendImages/passeio.jpg" class="card-img-top" alt="Estrada comprometida">
+                            <div class="card-footer bg-primary text-white p-3 text-center">
+                                <h5 class="m-0 fs-6 fw-bold">Passeio danificado</h5>
+                                <img src="../media/icons/seta.svg" alt="seta" class="corner-icon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="PasseioSemLuz.html" class="card-link text-decoration-none">
+                        <div class="card report-card border-0 shadow-sm h-100">
+                            <img src="../media/FrontendImages/luz.jpg" class="card-img-top" alt="Estrada comprometida">
+                            <div class="card-footer bg-primary text-white p-3 text-center">
+                                <h5 class="m-0 fs-6 fw-bold">Passeio sem luz</h5>
+                                <img src="../media/icons/seta.svg" alt="seta" class="corner-icon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Entre em contacto</h2>
+                <p class="text-muted">Estamos prontos para trabalhar num projeto que venha a melhorar o seu futuro</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="contactForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <input type="text" class="form-control" placeholder="Nome*" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email*" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Mensagem*" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary px-5 py-2">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5" id="faq">
+        <div class="container">
+            <h2 class="text-primary text-center mb-5">Perguntas frequentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Quem pode solicitar uma auditoria?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Qualquer cidadão, seja um cidadão, uma empresa ou uma entidade pública. Caso tenha identificado problemas em infraestruturas urbanas que queira ver resolvidas, basta reportar e iremos prosseguir com a avaliação.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Como é feita a auditoria?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Um perito da nossa empresa dirige-se ao local para realizar uma avaliação dos danos reportados. Após transmissão de feedback, é atribuída uma empresa responsável para resolução do problema.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Quanto tempo demora uma auditoria?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O prazo varia conforme a extensão da área a ser avaliada e a complexidade dos problemas identificados. Pequenos problemas podem ser analisados em poucos dias, enquanto projetos maiores podem levar semanas ou meses. Tentamos que a nossa resposta seja a mais breve possível.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Section -->
+    <section class="py-5 bg-light" id="rating">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Avalie-nos</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="ratingForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <input type="text" class="form-control" placeholder="Nome*" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email*" required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" rows="4" placeholder="Avaliação*" required></textarea>
+                                </div>
+                                <div class="small text-muted mb-4"><span class="text-danger">*</span> indica um campo obrigatório</div>
+                                <div class="text-center mb-3">
+                                    <div class="rating-stars d-inline-flex">
+                                        <span class="star px-1">★</span>
+                                        <span class="star px-1">★</span>
+                                        <span class="star px-1">★</span>
+                                        <span class="star px-1">★</span>
+                                        <span class="star px-1">★</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary px-5 py-2">Enviar</button>
+                                </div>
+                                <div>
+                                    <a href="../Front-Office/Avaliações.html" target="_self">Consultar avaliações</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-logo-container">
+                <img src="../media/images/logo_dark.png" alt="EyesEverywhere Logo" width="35" height="35" class="mb-3">
+                <span class="fw-bold fst-italic text-primary">EyesEverywhere</span>
+        </div>
+    </section>
+
+    <!-- Success Popup -->
+    <div id="success-popup" class="popup">
+        <p>Submetido com sucesso!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-3 mt-auto">
+        <div class="container-fluid text-center">
+            <p class="small mb-0">EyesEverywhere - 2025. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptsFront/stars.js"></script>
+    <script src="scriptsFront/Popup.js"></script>
+    <script src="scriptsFront/ErrorPopup.js" defer></script>
+    <script src="scriptsFront/FrontOffice.js" defer></script>
+    <script src="scriptsFront/navbar.js"></script>
+    <script src="scriptsFront/AvalFront.js" defer></script>
+    <script src="scriptsFront/Auditoria.js" defer></script>
+
+</body>
+</html>

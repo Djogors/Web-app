@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Pessoal</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../media/images/logo_light.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="FrontOffice.html">
+                <img src="../media/images/logo_light.png" alt="EyesEverywhere Logo">
+                <span class="fw-bold fst-italic text-white ms-2">EyesEverywhere</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li id="authPlaceholder" class="nav-item dropdown">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h1 class="fw-bold text-primary mb-4">Área pessoal</h1>    
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-2" id="userName">Nome: </p>
+                        <p class="mb-2" id="userEmail">Email: </p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="fw-bold text-primary mb-4">Notificações</h2>
+            
+            <div id="notificationsContainer" class="mb-5"></div>
+            <div id="pedidosContainer" class="mb-5"></div>
+           
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-3 mt-auto">
+        <div class="container-fluid text-center">
+            <p class="small mb-0">EyesEverywhere - 2025. All Rights Reserved</p>
+        </div>
+    </footer> 
+
+    <script src ="../Back-Office/scripts/local_storage_utils.js"></script>
+    <script src="scriptsFront/ErrorPopup.js"></script>
+    <script src="scriptsFront/Popup.js"></script>
+    <script src="scriptsFront/AreaPessoal.js"></script>
+    <script src="scriptsFront/navbar.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            preencherInfoUtilizador();
+            renderizarPedidosDoUtilizador();
+            corrigirNotificacoes();
+            renderizarNotificacoes();
+        });
+    </script>
+    </body>
+</html>
